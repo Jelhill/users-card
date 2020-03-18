@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9fd481d9.chunk.css",
+    "main.js": "/static/js/main.1b9ae51a.chunk.js",
+    "main.js.map": "/static/js/main.1b9ae51a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6ea05656.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6ea05656.js.map",
+    "static/js/2.a93a1f6e.chunk.js": "/static/js/2.a93a1f6e.chunk.js",
+    "static/js/2.a93a1f6e.chunk.js.map": "/static/js/2.a93a1f6e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f60a5b7261efc206804ebef8c0c550d7.js": "/precache-manifest.f60a5b7261efc206804ebef8c0c550d7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9fd481d9.chunk.css.map": "/static/css/main.9fd481d9.chunk.css.map",
+    "static/js/2.a93a1f6e.chunk.js.LICENSE.txt": "/static/js/2.a93a1f6e.chunk.js.LICENSE.txt",
+    "static/media/busquets.jpg": "/static/media/busquets.ecebe1c5.jpg",
+    "static/media/de-jong.jpg": "/static/media/de-jong.e3bc00ea.jpg",
+    "static/media/dembele.jpg": "/static/media/dembele.9004328c.jpg",
+    "static/media/griezman.jpg": "/static/media/griezman.b4e32970.jpg",
+    "static/media/messi.jpg": "/static/media/messi.ee3cf1dd.jpg",
+    "static/media/pique.jpg": "/static/media/pique.8e6a9251.jpg",
+    "static/media/semedo.jpg": "/static/media/semedo.e7b2494d.jpg",
+    "static/media/suarez.jpg": "/static/media/suarez.d909db9f.jpg",
+    "static/media/ter-stergen.jpg": "/static/media/ter-stergen.5cf3cd45.jpg",
+    "static/media/vidal.jpg": "/static/media/vidal.d83f1d7c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ea05656.js",
+    "static/js/2.a93a1f6e.chunk.js",
+    "static/css/main.9fd481d9.chunk.css",
+    "static/js/main.1b9ae51a.chunk.js"
+  ]
+}
