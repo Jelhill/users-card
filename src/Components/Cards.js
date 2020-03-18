@@ -8,7 +8,7 @@ const Cards = ({data, players}) => {
         return (
             <div id="card-container" key={i}>                
                 <div id="cards-div">           
-                    <img src={players[counter].image} alt="Image" />                    
+                    <img src={players[counter].image} alt="footballar" />                    
                     <h2 className="tc">{eachData.name}</h2>
                     <h4 className="tc">{eachData.username}</h4>
                     <p className="tc">{eachData.email}</p>
