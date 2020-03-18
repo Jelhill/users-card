@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Cards = ({data, players}) => {   
-    
+
     let counter = 0; 
     data = data.map((eachData, i) => {    
 
