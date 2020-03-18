@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import CardPack from "./Components/CardPack"
+import Search from "./Components/Search"
+import {players} from './Data/Data'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+
+    constructor() {
+      super();
+      this.state = {
+        fetching: true,
+        entries: [],
+        players: players,
+        searchField: "",
+      }
+    }
+
+    async componentDidMount() {
+      const apiUrl = 'https://jsonplaceholder.typicode.com/users';
+      const response = await fetch(apiUrl)
+      const data = await response.json();
+
+      this.setState({
+        entries: [...this.state.entries, ...data]
+      })
+
+    }
+
+    onSearch = (event) => {
+      this.setState({searchField: event.target.value})
+    }
+
+    
+
+  render() {
+   const filteredName = this.state.entries.filter((user) => {
+     return user.name.toLowerCase().includes(this.state.searchField)
+   })
+
+    return (
+      <React.Fragment>
+        <h3>{this.state.fetching ? "Fetching ..." : "Success"}</h3>
+        <Search onSearch={this.onSearch}/>
+        <CardPack data={filteredName} players={this.state.players} />
+      </React.Fragment>
+    )
+  }
 }
 
-export default App;
