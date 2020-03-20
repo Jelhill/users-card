@@ -40,7 +40,6 @@ export default class App extends Component {
 
     return (
       <React.Fragment>
-        <h3>{this.state.fetching ? "Fetching ..." : "Success"}</h3>
         <Search onSearch={this.onSearch}/>
         <CardPack data={filteredName} players={this.state.players} />
       </React.Fragment>
