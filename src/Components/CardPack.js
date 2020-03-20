@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Cards from "../Components/Cards"
 
 
 const CardPack = ({data, players, filteredName}) => {       
         return (
-            <Fragment>
+            <div>
                 <Cards data={data} players={players} filteredName={filteredName}/>
-            </Fragment>
+            </div>
             
-          )
+        )
 }
 
 

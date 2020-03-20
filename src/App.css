@@ -10,6 +10,7 @@ body{
   margin-left: 60px;
   margin-top: 40px;
   float: left;
+  box-shadow: h-offset(20px 20px 50px grey);
 }
 
 #card-container{

@@ -25,7 +25,6 @@ export default class App extends Component {
       this.setState({
         entries: [...this.state.entries, ...data]
       })
-
     }
 
     onSearch = (event) => {
@@ -49,3 +48,4 @@ export default class App extends Component {
   }
 }
 
+//https://repl.it/@Jelhill/Create-React-App
